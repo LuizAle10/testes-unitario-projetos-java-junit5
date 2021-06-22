@@ -8,7 +8,7 @@ package com.treinando_java;
 
 
 //3- Classe
-public class medidas {	
+public class Medidas {	
 	//3.1- Atributos - Caracteristicas 
 	
 	//3.2- Métodos e Funções

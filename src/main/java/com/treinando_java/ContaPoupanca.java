@@ -1,16 +1,16 @@
 package com.treinando_java;
 
 
-public class savingsAccount {
+public class ContaPoupanca {
   
     int balance;
     
-    public savingsAccount(int initialBalance){
+    public ContaPoupanca(int initialBalance){
       balance = initialBalance;
     }
     
     public static void main(String[] args){
-      savingsAccount savings = new savingsAccount(2000);
+      ContaPoupanca savings = new ContaPoupanca(2000);
       
       //Check balance:
       System.out.println("Hello!");

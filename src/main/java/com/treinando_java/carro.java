@@ -1,8 +1,7 @@
 package com.treinando_java;
 
 
-public class carro 	
-{
+public class Carro 	{
 	
 	//campos de instancia
 	
@@ -14,7 +13,7 @@ String cor;
   
   //método construtor 
     // new parameters that correspond to the new fields
-	public carro(String corCarro, boolean carroCorrendo, int KM) {
+	public Carro(String corCarro, boolean carroCorrendo, int KM) {
 		cor = corCarro;
 		
 		// assign new parameters to the new fields
@@ -25,9 +24,9 @@ String cor;
    // método principal
    public static void main(String[] args) {
 	   // new values passed into the method call
-	   carro ferrari = new carro ("red", true, 27);
-	   carro renault = new carro ("blue", false, 70);
-	   carro honda = new carro("green", false, 0);
+	   Carro ferrari = new Carro ("red", true, 27);
+	   Carro renault = new Carro ("blue", false, 70);
+	   Carro honda = new Carro("green", false, 0);
 	   
 	   System.out.println(renault.corre);
 	   // false

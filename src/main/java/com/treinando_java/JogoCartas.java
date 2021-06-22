@@ -12,19 +12,19 @@ Estou construindo um programa de jogo de cartas, no qual em um determinado momen
 import java.util.Random;
 
 
-public class jogoDeCartas {
+public class JogoCartas {
 
-    Carta[] cartas = new Carta[52];
+    JogoCartas[] cartas = new JogoCartas[52];
     String[] naipes = {"Copas", "Espada", "Ouros", "Paus"};
     String[] nomes = {"As", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"};
     String coringa;
     Random aleatorio = new Random();
 
-    public jogoDeCartas() {
+    public JogoCartas() {
         int cont = 0;
         for (String naipe : naipes) {
             for (String nome : nomes) {
-                Carta cartas = new Carta();
+                JogoCartas cartas = new JogoCartas();
                 cartas.setNaipe(naipes);
                 cartas.setNome(nomes);
                 this.cartas[cont] = cartas;

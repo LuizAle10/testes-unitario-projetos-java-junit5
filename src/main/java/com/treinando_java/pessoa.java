@@ -1,7 +1,7 @@
 package com.treinando_java;
 
 
-public class pessoa {
+public class Pessoa {
     // state of an object
     int idade;
     String nome;
@@ -37,7 +37,7 @@ public class pessoa {
     // main method
     public static void main(String [] args) {
       // creates a new Person object
-      pessoa p = new pessoa(); 
+      Pessoa p = new Pessoa(); 
       
       // changes state through behavior
       p.dadosPessoa();
