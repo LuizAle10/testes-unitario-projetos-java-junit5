@@ -11,11 +11,11 @@ public class Carro 	{
   
   
   //método construtor 
-	public Carro(String corCarro, boolean carroCorrendo, int KM) {
+   public Carro(String corCarro, boolean carroCorrendo, int KM) {
 		
-		cor = corCarro;
-		corre = carroCorrendo;
-		velocidade = KM;
+	   cor = corCarro;
+	   corre = carroCorrendo;
+	   velocidade = KM;
   }
   
    // método principal

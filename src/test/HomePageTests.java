@@ -11,7 +11,6 @@ public class HomePageTests {
         public void testSomarIdadesCachorros() {
             
             int somaIdadeCachorros = Cachorro.totalIdadeCachorro();
-           
             assertThat(quantidadeCachorros, is(16));
 
         }
