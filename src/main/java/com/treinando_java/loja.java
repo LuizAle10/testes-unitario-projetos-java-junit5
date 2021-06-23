@@ -1,32 +1,44 @@
 package com.treinando_java;
 
 public class Loja {
-    // instance fields
+    //campos de instância
     String tipoProduto;
-    int inventoryCount;
-    double inventoryPrice; 
+    int contagemInventario;
+    double precoEstoque; 
   
-    // constructor method
-    public Loja(String produto, int count, double price ) {
+    //método construtor
+    public Loja(String produto, int contar, double preco ) {
   
       tipoProduto = produto;
-      inventoryCount = count;
-      inventoryPrice = price;
-  
+      contagemInventario = contar;
+      precoEstoque = preco;
     }
     
-    // main method
+    //método principal
     public static void main(String[] args) {
       
-      Loja cookieShop = new Loja("cookies", 12, 3.75 );
-      Loja chocolateshop = new Loja ("chocolate", 15, 10.55);
-      Loja Shoesstore = new Loja ("tênis", 30, 25.55);
+      Loja lojaCookie = new Loja("cookies", 12, 3.75 );
+      Loja lojaChocolate = new Loja ("chocolate", 15, 10.55);
+      Loja lojaSapatos = new Loja ("tênis", 30, 25.55);
       
-      System.out.println (cookieShop);
-      System.out.println (chocolateshop);
-      System.out.println (Shoesstore);
+      //listar produtos
+      System.out.println ("Lista de produtos:");
+      System.out.println (lojaCookie);
+      System.out.println (lojaChocolate);
+      System.out.println (lojaSapatos);
 
+      double valorCookies = 3.75;
+      double valorChocolate = 10.55;
+      double valorSapatos = 10.55;
 
-      
+      double valorTotal = valorCookies + valorChocolate + valorSapatos;
+      System.out.println(valorTotal);
+
+      if (valorTotal <= 15) {
+        System.out.println("Devo comprar!");
+      } 
+      else {
+        System.out.println("É muito caro!");
+      }
     }
-  }
+}

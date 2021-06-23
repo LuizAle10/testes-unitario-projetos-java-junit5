@@ -1,13 +1,11 @@
 package com.treinando_java;
 
-
 import java.util.Random;
-
 
 public class ResultadosRandomico {
 
-//Listagem 1: Exemplo básico de utilização da classe Random.
-    public static void aleatoriosInteirosConstrutorPadrao() {
+    //Listagem 1: Exemplo básico de utilização da classe Random.
+    public  void aleatoriosInteirosConstrutorPadrao() {
 
         //instância um objeto da classe Random usando o construtor padrão
         Random gerador = new Random();
@@ -17,11 +15,11 @@ public class ResultadosRandomico {
             System.out.println(gerador.nextInt());
         }
     }
+
+
 	
-	
-//Listagem 2: Gerando sequência de números aleatórios inteiros com valores entre 0 e 25.
-	
-	 public void aleatoriosInteirosConstrutorBasico() {
+    //Listagem 2: Gerando sequência de números aleatórios inteiros com valores entre 0 e 25.	
+	public void aleatoriosInteirosConstrutorBasico() {
 
         //instância um objeto da classe Random usando o construtor básico
         Random gerador = new Random();
@@ -30,10 +28,12 @@ public class ResultadosRandomico {
         for (int i = 0; i < 10; i++) {
             System.out.println(gerador.nextInt(26));
          }
-    
-        }
+  
+    }
 
-//Listagem 3: Especificando a semente.
+
+
+    //Listagem 3: Especificando a semente.
     public void especificandoASemente() {
 
         //instância um objeto da classe Random especificando a semente
@@ -47,8 +47,8 @@ public class ResultadosRandomico {
 
 
 
-//Listagem 4: Números reais.
-    public static void numerosReais() {
+    //Listagem 4: Números reais.
+    public void numerosReais() {
 
         Random r = new Random();
 
@@ -58,10 +58,7 @@ public class ResultadosRandomico {
 
 
 
-
-//5
-//Gerando números inteiros aleatórios de 0 à 100
-//Gerando números reais aleatórios
+    //Listagem 5: Gerando números reais e inteiros aleatórios de 0 à 100
     public  void GerarNumeroAleatorio() {
 
         Random random = new Random();
@@ -74,48 +71,79 @@ public class ResultadosRandomico {
 
         double numeroRealAleatorio_0_a_10 = random.nextDouble() * 10;
         System.out.println("Número real aleatório de 0 até 10: " + numeroRealAleatorio_0_a_10);
-
     }
 
 
 
+    //Listagem 6: Escolha 4 nomes numa lista de 10 e que eles nao se repitam
+    public void aleatorioSemRepetir(){
 
-//6	
-//fazer que ele nao se repita? ou tipo quero que o random escolha 4 nomes numa lista de 10 e que eles nao se repitam tem como?
-public void aleatorio(){
-int [] array = new int[4];
-Random random = new Random();
-boolean temnumero = false;
-for (int i =0; i < 4; i ++)
-{
-int valor = random.nextInt(10);
-for (int j = 0; j < 4; j ++)
-{
-if (array[j] == valor)
-{
+        int [] array = new int[4];
+        Random random = new Random();
+        boolean temnumero = false;
+        for (int i =0; i < 4; i ++)
+        {
+        int valor = random.nextInt(10);
+        for (int j = 0; j < 4; j ++)
+        {
+        if (array[j] == valor)
+        {
+        
+        j = 4;
+        temnumero = true;
+        }
+        }
+        
+        if (!temnumero)
+        {
+        array[i] = valor;
+        }
+        
+        else
+        {
+        temnumero = false;
+        i--;
+        }
+        }
+        
+        for (int i = 0; i < 4; i ++)
+        {
+        System.out.println(array[i]);
+        }
+    }
+        
+        
+        
+    // método principal
+    public static void main(String [] args) {
+              
+            ResultadosRandomico numerosAleatorios  = new ResultadosRandomico(); 
+          
+          System.out.println("==================RESULTADOS RANDOMICOS====================");
+          System.out.println("Listagem 1: Exemplo básico de utilização da classe Random: ");
+          numerosAleatorios.aleatoriosInteirosConstrutorPadrao();
+        
+          System.out.println("=======================================================================================");
+          System.out.println("Listagem 2: Gerando sequência de números aleatórios inteiros com valores entre 0 e 25: ");
+          numerosAleatorios.aleatoriosInteirosConstrutorBasico();
+        
+          System.out.println("========================================================================================");
+          System.out.println("Listagem 3: Especificando a semente: ");
+          numerosAleatorios.especificandoASemente();
+        
+          System.out.println("========================================================================================");
+          System.out.println("Listagem 4: Números reais: ");
+          numerosAleatorios.numerosReais();
+        
+          System.out.println("========================================================================================");
+          System.out.println("Listagem 5: Gerando números reais e inteiros aleatórios de 0 à 100: ");
+          numerosAleatorios.GerarNumeroAleatorio();
+        
+          System.out.println("========================================================================================");
+          System.out.println("Listagem 6: Escolha 4 nomes numa lista de 10 e que eles nao se repitam: ");
+          numerosAleatorios.aleatorioSemRepetir();      
+    }
 
-j = 4;
-temnumero = true;
-}
-}
-
-if (!temnumero)
-{
-array[i] = valor;
-}
-
-else
-{
-temnumero = false;
-i--;
-}
-}
-
-for (int i = 0; i < 4; i ++)
-{
-System.out.println(array[i]);
-}
-}
 }
 
 	
