@@ -2,7 +2,7 @@ package com.treinando_java;
 
 import java.util.Random;
 
-public class ResultadosRandomicoo {
+public class ResultadosRandomico {
 
     //Listagem 1: Exemplo básico de utilização da classe Random.
     public  void aleatoriosInteirosConstrutorPadrao() {
@@ -117,7 +117,7 @@ public class ResultadosRandomicoo {
     // método principal
     public static void main(String [] args) {
               
-            ResultadosRandomicoo numerosAleatorios  = new ResultadosRandomicoo(); 
+            ResultadosRandomico numerosAleatorios  = new ResultadosRandomico(); 
           
           System.out.println("==================RESULTADOS RANDOMICOS====================");
           System.out.println("Listagem 1: Exemplo básico de utilização da classe Random: ");

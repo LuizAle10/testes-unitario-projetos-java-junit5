@@ -3,8 +3,7 @@ package com.treinando_java;
 
 public class Carro 	{
 	
-	//campos de instancia
-	
+  //campos de instancia
   String cor;
   boolean corre;
   int velocidade;

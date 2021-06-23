@@ -1,0 +1,84 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Biblioteca",
+            "request": "launch",
+            "mainClass": "com.treinando_java.Biblioteca",
+            "projectName": "treinando"
+        },
+        {
+            "type": "java",
+            "name": "Launch Cachorro",
+            "request": "launch",
+            "mainClass": "com.treinando_java.Cachorro",
+            "projectName": "treinando"
+        },
+        {
+            "type": "java",
+            "name": "Launch CadastrarPessoa",
+            "request": "launch",
+            "mainClass": "com.treinando_java.CadastrarPessoa",
+            "projectName": "treinando"
+        },
+        {
+            "type": "java",
+            "name": "Launch Calculadora",
+            "request": "launch",
+            "mainClass": "com.treinando_java.Calculadora",
+            "projectName": "treinando"
+        },
+        {
+            "type": "java",
+            "name": "Launch Carro",
+            "request": "launch",
+            "mainClass": "com.treinando_java.Carro",
+            "projectName": "treinando"
+        },
+        {
+            "type": "java",
+            "name": "Launch ContaPoupanca",
+            "request": "launch",
+            "mainClass": "com.treinando_java.ContaPoupanca",
+            "projectName": "treinando"
+        },
+        {
+            "type": "java",
+            "name": "Launch JogoCartas",
+            "request": "launch",
+            "mainClass": "com.treinando_java.JogoCartas",
+            "projectName": "treinando"
+        },
+        {
+            "type": "java",
+            "name": "Launch Loja",
+            "request": "launch",
+            "mainClass": "com.treinando_java.Loja",
+            "projectName": "treinando"
+        },
+        {
+            "type": "java",
+            "name": "Launch Medidas",
+            "request": "launch",
+            "mainClass": "com.treinando_java.Medidas",
+            "projectName": "treinando"
+        },
+        {
+            "type": "java",
+            "name": "Launch ResultadosRandomico",
+            "request": "launch",
+            "mainClass": "com.treinando_java.ResultadosRandomico",
+            "projectName": "treinando"
+        }
+    ]
+}

@@ -16,8 +16,8 @@ public class Medidas {
 	 int comprimento = 3;
 	 int resultado = largura * comprimento;
 	
-     System.out.println("Para a largura de " + largura + " metros e o comprimento de "
-                          + comprimento + " metros,\na área é de " + resultado + "metros quadrados");
+   System.out.println("Para a largura de " + largura + " metros e o comprimento de "
+                      + comprimento + " metros,\na área é de " + resultado + "metros quadrados");
     }
 }
 					  						  
