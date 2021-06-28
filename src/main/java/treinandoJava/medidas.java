@@ -1,5 +1,5 @@
 
-package com.treinando_java;
+package treinandoJava;
 
 //Classe
 public class Medidas {

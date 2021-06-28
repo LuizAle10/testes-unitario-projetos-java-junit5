@@ -1,4 +1,4 @@
-package com.treinando_java;
+package treinandoJava;
 
 public class CadastrarPessoa {
   // estado de um objeto
@@ -36,6 +36,8 @@ public class CadastrarPessoa {
         "Rua a esquerda", 1);
     CadastrarPessoa ana = new CadastrarPessoa(40, "Ana", "Brasileiro", "São Paulo", "PO", "São Paulo", "F",
         "Rua no centro", 5);
+    
+
 
     // imprimir dados cadastrados
     // Pessoa um
@@ -77,4 +79,14 @@ public class CadastrarPessoa {
     System.out.println("Endereço: " + ana.logradouro);
     System.out.println("Número: " + ana.numeroLogradouro);
   }
+
+  
+  public Integer alexandre(int alexandre) {
+  	// TODO Auto-generated method stub
+  	return alexandre;
+  }
+  
+  
+
+
 }

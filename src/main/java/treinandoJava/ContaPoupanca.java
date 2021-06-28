@@ -1,4 +1,4 @@
-package com.treinando_java;
+package treinandoJava;
 
 public class ContaPoupanca {
 

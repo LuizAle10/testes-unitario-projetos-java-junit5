@@ -1,4 +1,4 @@
-package com.treinando_java;
+package treinandoJava;
 
 import java.util.Random;
 
